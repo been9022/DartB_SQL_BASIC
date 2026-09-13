@@ -62,25 +62,26 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 ## 01.
 
 ```
-개념 이름:
-개념 설명:
-예시 쿼리:
+개념 이름: SELECT
+개념 설명:  테이블에 저장되어 있는 컬럼을 선택, 여러 컬럼 명시 가능, col1 AS "별칭"으로 컬럼의 이름도 별칭 지정 가능
+예시 쿼리: SELECT  
+ id AS pokemon_id
 ```
 
 ## 02.
 
 ```
-개념 이름:
-개념 설명:
-예시 쿼리:
+개념 이름: FROM 
+개념 설명: 데이터를 확인할 Table 명시
+예시 쿼리: FROM `inflearn-bigquery-507707.basic.pokemon`
 ```
 
 ## (선택) 03.
 
 ```
-개념 이름:
-개념 설명:
-헷갈린 점:
+개념 이름: WHERE
+개념 설명: FROM에 명시된 Table에 저장된 데이터를 필터링
+헷갈린 점: select, from, where 순서를 쿼리를 짤 때 생각하는게 어려웠다. 
 ```
 
 ---
@@ -90,8 +91,13 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 아래 중 하나 이상을 첨부해주세요.
 
 - 강의 수강 화면 캡처
+  <img width="582" height="347" alt="인증" src="https://github.com/user-attachments/assets/1b5b99b5-5e15-4f1f-ba5c-cda7608d87b0" />
+
 - 문제 풀이 정답 화면 캡처
+  <img width="1871" height="750" alt="정답1" src="https://github.com/user-attachments/assets/2791e73f-142b-4d23-9d8a-91e8ad3d706c" />
+
 - SQL 실행 결과 화면 캡처
+<img width="1832" height="801" alt="실습" src="https://github.com/user-attachments/assets/15248de9-17a7-449c-9a85-bb2526130635" />
 
 ---
 
@@ -106,12 +112,13 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 풀이 과정:
 
 ```
-- 테이블에서 확인한 컬럼:
-- SELECT와 FROM을 작성한 방식:
-- 새로 배운 점:
+- 테이블에서 확인한 컬럼: ANIMAL_ID, ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE
+- SELECT와 FROM을 작성한 방식: 모든 동물의 정보를 조회하라고 했으니 컬럼을 하나하나 나열할 필요 없이 SELECT *로 전체 컬럼을 가져왔다. FROM ANIMAL_INS로 대상 테이블을 지정했다.
+- 새로 배운 점: ORDER_BY는 항상 쿼리 맨 마지막에 온다는 것을 알게 되었다. 정렬 기준을 따로 안정하면 기본이 오름차순이라는 것을 알게 되었다. 
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1871" height="750" alt="정답1" src="https://github.com/user-attachments/assets/e9eae305-c68c-4922-94fa-ab99257b0ea1" />
+
 
 ## 🧩 문제 2
 
@@ -120,22 +127,23 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 풀이 과정:
 
 ```
-- 문제에서 요구한 조건:
-- WHERE 절로 옮긴 방식:
-- 정렬 기준이 있다면 사용한 기준:
-- 새로 배운 점:
+- 문제에서 요구한 조건: 동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름을 조회하고 아이디 순으로 정렬해야 한다
+- WHERE 절로 옮긴 방식: INTAKE_CONDITION = 'Sick' 조건을 사용해 아픈 동물만 조회한다.
+- 정렬 기준이 있다면 사용한 기준: ANIMAL_ID를 기준으로 오름차순 정렬
+- 새로 배운 점: WHERE를 사용하면 원하는 조건에 해당하는 행만 골라낼 수 있고, ORDER BY를 사용하면 특정 컬럼을 기준으로 결과를 정렬할 수 있다는 점을 배웠다.
 ```
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. -->
+<img width="1756" height="821" alt="정답2" src="https://github.com/user-attachments/assets/9d8e821c-3133-4402-81ae-0a4448fccedb" />
+
 
 ---
 
 # 4️⃣ 이번 주 회고
 
 ```
-1. SELECT, FROM, WHERE 중 가장 헷갈린 개념:
-2. 문제를 풀 때 가장 자주 확인하게 된 부분:
-3. 다음 주 문제 풀이에서 의식하고 싶은 습관:
+1. SELECT, FROM, WHERE 중 가장 헷갈린 개념: WHERE가 가장 헷갈렸다. 어떤 조건을 넣어야 원하는 데이터만 조회할 수 있는지 구분하는 부분이 어려웠다.
+2. 문제를 풀 때 가장 자주 확인하게 된 부분: 문제에서 어떤 컬럼을 출력해야 하는지와 어떤 조건에 해당하는 데이터만 골라야 하는지를 가장 자주 확인했다.
+3. 다음 주 문제 풀이에서 의식하고 싶은 습관: 문제를 읽을 때 먼저 SELECT = 무엇을 / FROM = 어디서 / WHERE = 어떤 조건으로를 구분한 뒤 SQL문을 작성하는 습관을 들이고 싶다.
 ```
 
 수고하셨습니다!
