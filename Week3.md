@@ -65,26 +65,34 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 ## 01.
 
 ```
-개념 이름:
-개념 설명:
+개념 이름: GROUP BY
+개념 설명: 그룹화 한 값에 조건 설정하기
 예시 쿼리:
+SELECT
+ type1,
+ COUNT(id) AS cnt
+FROM basic.pokemon
+GROUP BY
+ type1
 ```
 
 ## 02.
 
 ```
-개념 이름:
-개념 설명:
+개념 이름: HAVING
+개념 설명: GROUP BY한 후 조건을 설정하고 싶은 경우
 예시 쿼리:
+SELECT
+ type1,
+ COUNT(id) AS cnt
+FROM basic.pokemon
+GROUP BY
+ type1
+HAVING cnt >= 10
+ORDER BY cnt DESC
 ```
 
-## (선택) 03.
 
-```
-개념 이름:
-개념 설명:
-헷갈린 점:
-```
 
 ---
 
@@ -95,6 +103,10 @@ SQL_BASIC 정규 과제는 매주 정해진 분량의 `초보자를 위한 BigQu
 - 강의 수강 화면 캡처
 - 문제 풀이 정답 화면 캡처
 - SQL 실행 결과 화면 캡처
+
+  <img width="1245" height="877" alt="결3" src="https://github.com/user-attachments/assets/521aa862-e411-457a-97b1-a7cc8d870215" />
+<img width="907" height="521" alt="강의수강인증" src="https://github.com/user-attachments/assets/bc260dbe-0b9a-4c12-8abc-88bd0303d8e0" />
+
 
 ---
 
