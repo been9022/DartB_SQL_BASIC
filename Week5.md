@@ -170,7 +170,7 @@ SELECT
 - 평균을 계산한 방식: DATEDIFF(END_DATE, START_DATE) + 1로 시작일과 종료일을 포함한 대여 기간을 구하고, AVG()로 평균을 계산했습니다. ROUND(..., 1)로 소수점 둘째 자리에서 반올림하여 첫째 자리까지 표시했습니다.
 - HAVING에 사용한 조건: 반올림하기 전 평균 대여 기간이 7일 이상인 자동차만 선택했습니다.
 - 처음 헷갈렸던 점: 개별 기록을 걸러내는 WHERE와 그룹별 평균에 조건을 적용하는 HAVING의 차이가 헷갈렸습니다. 이 문제는 자동차별 평균에 조건을 적용하므로 HAVING을 사용했습니다.
-```
+  
 
 <img width="1690" height="792" alt="4" src="https://github.com/user-attachments/assets/d45696b6-a309-4c21-857c-9c126b1734e5" />
 
