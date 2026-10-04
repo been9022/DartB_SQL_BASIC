@@ -134,10 +134,14 @@ SELECT
 - 문제에서 요구한 연도: 2021
 - 사용한 날짜 조건: TIME이 2021년 1월 1일 이상, 2022년 1월 1일 미만인 기록을 선택했습니다.
 - 집계한 대상: 2021년에 잡은 모든 물고기입니다. COUNT(*)를 사용하여 LENGTH가 NULL인 물고기도 포함했습니다.
-```
-<img width="1885" height="676" alt="2" src="https://github.com/user-attachments/assets/aab886c7-ffb3-45b2-a452-78f867d2aaa2" />
+  
+
+
+<img width="1885" height="676" alt="2" src="https://github.com/user-attachments/assets/aadbcfc2-feee-4e91-b119-e01633447dc2" />
+
 
 ```
+
 ## 🧩 문제 3
 
 문제 링크: [조건에 부합하는 중고거래 상태 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/164672)
@@ -149,7 +153,7 @@ SELECT
 - CASE WHEN으로 바꾼 값: SALE은 ‘판매중’, RESERVED는 ‘예약중’, DONE은 ‘거래완료’로 바꿨습니다.
 - ELSE에 해당하는 경우: 위 세 가지에 해당하지 않는 상태는 기존 STATUS 값을 그대로 출력합니다.
 - 정렬 기준: 게시글 ID인 BOARD_ID를 기준으로 내림차순 정렬했습니다.
-```
+  
 
 <img width="1527" height="672" alt="3" src="https://github.com/user-attachments/assets/1872d866-66a8-4b76-a193-79459b9c625c" />
 
