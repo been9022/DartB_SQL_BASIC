@@ -98,7 +98,7 @@ SELECT
 
 # 2️⃣ 수행 인증란
 
-
+```
 <img width="1325" height="582" alt="인증" src="https://github.com/user-attachments/assets/71557319-897d-4064-b105-199a92feabbc" />
 <img width="1047" height="570" alt="sql1" src="https://github.com/user-attachments/assets/58ce6c47-7c79-4b61-8752-7de32a1e8a87" />
 
@@ -120,9 +120,10 @@ SELECT
 - 사용한 날짜 계산 방식: DATEDIFF(END_DATE, START_DATE) + 1로 계산했습니다. 시작일과 종료일을 모두 포함하기 위해 1을 더했습니다.
 - CASE WHEN으로 만든 컬럼: 조건에 따라 대여 유형을 표시하는 RENT_TYPE 컬럼을 만들었습니다.
 ```
-<img width="1571" height="712" alt="1" src="https://github.com/user-attachments/assets/2539a9ea-6096-4521-9119-fbe0db70f705" />
 
+<img width="1571" height="712" alt="1" src="https://github.com/user-attachments/assets/f288c41c-2a49-40ed-a8d0-5017a6e70193" />
 
+```
 ## 🧩 문제 2
 
 문제 링크: [한 해에 잡은 물고기 수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/298516)
@@ -136,7 +137,7 @@ SELECT
 ```
 <img width="1885" height="676" alt="2" src="https://github.com/user-attachments/assets/aab886c7-ffb3-45b2-a452-78f867d2aaa2" />
 
-
+```
 ## 🧩 문제 3
 
 문제 링크: [조건에 부합하는 중고거래 상태 조회하기](https://school.programmers.co.kr/learn/courses/30/lessons/164672)
@@ -152,6 +153,7 @@ SELECT
 
 <img width="1527" height="672" alt="3" src="https://github.com/user-attachments/assets/1872d866-66a8-4b76-a193-79459b9c625c" />
 
+```
 
 ## 🧩 문제 4
 
@@ -168,7 +170,7 @@ SELECT
 
 <img width="1690" height="792" alt="4" src="https://github.com/user-attachments/assets/d45696b6-a309-4c21-857c-9c126b1734e5" />
 
-
+```
 ---
 
 # 4️⃣ 이번 주 회고
